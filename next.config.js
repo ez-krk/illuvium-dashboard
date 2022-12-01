@@ -12,7 +12,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.illuvium-dashboard.vercel.app',
+        hostname: '**.vercel.app',
       },
     ],
     // path: `${basePath}/_next/image`,

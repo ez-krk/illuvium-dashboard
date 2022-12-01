@@ -96,11 +96,11 @@ const Table: FC = () => {
                       <div className="flex items-center justify-left">
                         <div className="avatar">
                           <div className="mask mask-hexagon w-12 h-12">
-                            <Image
+                            <img
                               src={`${
-                                // entry.illuvitar
-                                //   ? entry.illuvitar
-                                //   : 
+                                entry.illuvitar
+                                  ? entry.illuvitar
+                                  : 
                                   '/placeholder.png'
                               } `}
                               alt={`${entry.nickname}'s Illuvitar`}
