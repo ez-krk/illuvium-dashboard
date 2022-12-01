@@ -8,6 +8,14 @@ module.exports = nextConfig;
 
 module.exports = {
   images: {
-    domains: ['robohash.org', 'assets.illuvium-game.io', 'illuvium-dashboard.vercel.app']
+    domains: ['robohash.org', 'assets.illuvium-game.io', 'illuvium-dashboard.vercel.app'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.illuvium-game.io',
+        port: '80',
+        pathname: '/illuvitars/**',
+      },
+    ],
   }
 };

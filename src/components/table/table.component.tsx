@@ -66,7 +66,7 @@ const Table: FC = () => {
     <>
       <div className='w-full flex justify-center items-center mx-auto'>
         <h1 className="text-center text-xl font-bold text-transparent bg-clip-text my-5 tracking-tight bg-gradient-to-tr from-[#9945FF] to-[#14F195] rgbg">
-        Illuvium Leaderboard
+        Illuvium Dashboard
         </h1>
       </div>
       {isLoading ? (
@@ -98,10 +98,10 @@ const Table: FC = () => {
                           <div className="mask mask-hexagon w-12 h-12">
                             <Image
                               src={`${
-                                // entry.illuvitar
-                                //   ? entry.illuvitar
-                                  // : 
-                                  'placeholder.png'
+                                entry.illuvitar
+                                  ? entry.illuvitar
+                                  : 
+                                  '/placeholder.png'
                               } `}
                               alt={`${entry.nickname}'s Illuvitar`}
                               width={48}
