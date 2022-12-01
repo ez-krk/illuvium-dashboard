@@ -84,9 +84,10 @@ const Table: FC = () => {
                           <div className="mask mask-hexagon w-12 h-12">
                             <Image
                               src={`${
-                                entry.illuvitar
-                                  ? entry.illuvitar
-                                  : '/placeholder.png'
+                                // entry.illuvitar
+                                //   ? entry.illuvitar
+                                  // : 
+                                  '/placeholder.png'
                               } `}
                               alt={`${entry.nickname}'s Illuvitar`}
                               width={48}
