@@ -12,9 +12,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'assets.illuvium-game.io',
-        port: '443',
-        pathname: '/illuvitars/**',
+        hostname: '**.illuvium-game.io',
       },
     ],
     // path: `${basePath}/_next/image`,
