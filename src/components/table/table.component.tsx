@@ -18,7 +18,6 @@ const Table: FC = () => {
   const date = new Date();
   const today = date.toISOString().split("T")[0];
   const URL = `https://api.illuvium-game.io/gamedata/sumo/leaderboard/${today}`;
-  console.log(URL);
 
   interface UserEntry {
     Object: {
@@ -32,7 +31,7 @@ const Table: FC = () => {
   };
 
   type UserEntries = {
-    entry: Array<UserEntry>[];
+    entries: Array<UserEntry>[];
   }
 
   useEffect(() => {
@@ -48,7 +47,7 @@ const Table: FC = () => {
           const data = JSON.parse(response.data);
           const entries = data.entries;
           // console.log(data);
-          console.log(entries);
+          // console.log(entries);
           setData(entries);
         })
         .finally(() => setLoading(false));
