@@ -8,6 +8,6 @@ module.exports = nextConfig;
 
 module.exports = {
   images: {
-    domains: ['robohash.org', 'assets.illuvium-game.io']
+    domains: ['robohash.org', 'assets.illuvium-game.io', 'illuvium-dashboard.vercel.app']
   }
 };
