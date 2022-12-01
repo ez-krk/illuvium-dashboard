@@ -17,5 +17,6 @@ module.exports = {
         pathname: '/illuvitars/**',
       },
     ],
+    path: `${basePath}/_next/image`,
   }
 };
