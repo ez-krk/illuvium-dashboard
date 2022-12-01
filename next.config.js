@@ -13,7 +13,7 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'assets.illuvium-game.io',
-        port: '80',
+        port: '443',
         pathname: '/illuvitars/**',
       },
     ],
