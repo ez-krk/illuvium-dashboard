@@ -75,13 +75,13 @@ const Table: FC = () => {
         <div className="overflow-x-auto w-50 text-neutral">
           <table className="table w-full max-w-screen" id="illuvium-stats">
             {/* <!-- head --> */}
-            <thead className="text-center ">
-              <tr className="font-bold text-white">
-                <th>Rank</th>
-                <th>Player</th>
-                <th>Mastery Points</th>
-                <th>Illuvials Defeated</th>
-                <th>Wave</th>
+            <thead className="text-center bg-black">
+              <tr className="font-bold text-white bg-black">
+                <th className='bg-black'>Rank</th>
+                <th className='bg-black'>Player</th>
+                <th className='bg-black'>Mastery Points</th>
+                <th className='bg-black'>Illuvials Defeated</th>
+                <th className='bg-black'>Wave</th>
               </tr>
             </thead>
             {/* <!-- table body --> */}
