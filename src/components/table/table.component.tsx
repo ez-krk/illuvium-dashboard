@@ -20,6 +20,20 @@ const Table: FC = () => {
   const URL = `https://api.illuvium-game.io/gamedata/sumo/leaderboard/${today}`;
   console.log(URL);
 
+  interface UserEntry {
+    Object: {
+      illuvialsDefeated: number,
+      illuvitar: string,
+      masteryPoints: number,
+      millisecondsSpentPlanning: bigint,
+      nickname: string,
+      wave: number,
+    }
+  };
+
+  type UserEntries = {
+    entry: Array<UserEntry>[];
+  }
 
   useEffect(() => {
     try {
@@ -87,7 +101,7 @@ const Table: FC = () => {
                                 // entry.illuvitar
                                 //   ? entry.illuvitar
                                   // : 
-                                  '/placeholder.png'
+                                  'placeholder.png'
                               } `}
                               alt={`${entry.nickname}'s Illuvitar`}
                               width={48}
@@ -96,7 +110,7 @@ const Table: FC = () => {
                           </div>
                         </div>
                         <div>
-                          <div className="font-bold text-sm">
+                          <div className="text-sm ml-3">
                             {entry.nickname}
                           </div>
                           {/* <div className="text-sm opacity-50 w-full text-left">
@@ -105,11 +119,11 @@ const Table: FC = () => {
                         </div>
                       </div>
                     </td>
-                    <td className="font-bold text-xs bg-white">{entry.masteryPoints}</td>
-                    <td className="font-bold text-xs bg-white">
+                    <td className="text-xs bg-white">{entry.masteryPoints}</td>
+                    <td className="text-xs bg-white">
                       {entry.illuvialsDefeated}
                     </td>
-                    <td className="font-bold text-xs bg-white">{entry.wave}</td>
+                    <td className="text-xs bg-white">{entry.wave}</td>
                   </tr>
                 );
               })}
