@@ -61,8 +61,8 @@ const Table: FC = () => {
         <div className="overflow-x-auto w-50 text-neutral">
           <table className="table w-full max-w-screen" id="illuvium-stats">
             {/* <!-- head --> */}
-            <thead className="text-center">
-              <tr className="font-bold text-base">
+            <thead className="text-center ">
+              <tr className="font-bold text-white">
                 <th>Rank</th>
                 <th>Player</th>
                 <th>Mastery Points</th>
@@ -77,8 +77,8 @@ const Table: FC = () => {
                 x++;
                 return (
                   <tr key={entry.nickname}>
-                    <th className="text-xs">#{x}</th>
-                    <td>
+                    <td className="text-xs bg-white">#{x}</td>
+                    <td className='bg-white'>
                       <div className="flex items-center justify-left">
                         <div className="avatar">
                           <div className="mask mask-hexagon w-12 h-12">
@@ -104,11 +104,11 @@ const Table: FC = () => {
                         </div>
                       </div>
                     </td>
-                    <td className="font-bold text-xs">{entry.masteryPoints}</td>
-                    <td className="font-bold text-xs">
+                    <td className="font-bold text-xs bg-white">{entry.masteryPoints}</td>
+                    <td className="font-bold text-xs bg-white">
                       {entry.illuvialsDefeated}
                     </td>
-                    <td className="font-bold text-xs">{entry.wave}</td>
+                    <td className="font-bold text-xs bg-white">{entry.wave}</td>
                   </tr>
                 );
               })}
