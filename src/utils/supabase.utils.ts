@@ -4,7 +4,7 @@ const supabaseUrl = 'https://afuglgbcmvlyxovvwozz.supabase.co/';
 const supabaseKey =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFmdWdsZ2JjbXZseXhvdnZ3b3p6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njg0NzE3MjksImV4cCI6MTk4NDA0NzcyOX0.Lo_F5XLGTN_sVamaTIo8t_f0vJNcZ533_HqzUdtKEEc';
 const supabase = createClient(supabaseUrl, supabaseKey);
-console.log(supabase);
+// console.log(supabase);
 
 // fetch leaderboard for current day
 export const leaderboardFetch = async () => {
